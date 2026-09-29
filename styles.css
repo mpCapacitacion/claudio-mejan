@@ -237,10 +237,36 @@ button {
     margin-bottom: clamp(20px, 2.5vh, 35px);
 }
 
-.profile__logo {
-    width: clamp(210px, 20vw, 350px);
-    height: auto;
-    object-fit: contain;
+.company-logos {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:25px;
+    margin-bottom:45px;
+}
+
+/* logos */
+.company-logo {
+    object-fit:contain;
+}
+
+.company-logo--mp {
+    width:150px;
+}
+
+.company-logo--creaccion {
+    width:180px;
+}
+
+.company-logo--group {
+    width:150px;
+}
+
+/* Separadores */
+.company-divider {
+    width:1px;
+    height:45px;
+    background:rgba(255,255,255,.35);
 }
 
 /* ============================= NOMBRE Y POSICION =============================*/
@@ -514,8 +540,25 @@ button {
         min-height: 500px;
     }
 
-    .profile__logo {
-        width: 190px;
+    .company-logos{
+        gap:15px;
+        margin-bottom:30px;
+    }
+
+    .company-logo--mp{
+        width:100px;
+    }
+
+    .company-logo--creaccion{
+        width:130px;
+    }
+
+    .company-logo--group{
+        width:110px;
+    }
+
+    .company-divider{
+        height:35px;
     }
 
     .profile__header {
@@ -669,8 +712,40 @@ button {
             20px;
     }
 
-    .profile__logo {
-        width: 155px;
+    .company-logos{
+        justify-content:center;
+        gap:10px;
+        position: relative;
+        z-index: 5;
+        margin-bottom: 20px;
+    }
+
+
+    .company-logo--mp{
+
+        width:70px;
+
+    }
+
+
+    .company-logo--creaccion{
+
+        width:85px;
+
+    }
+
+
+    .company-logo--group{
+
+        width:75px;
+
+    }
+
+
+    .company-divider{
+
+        height:25px;
+
     }
 
 
@@ -686,16 +761,18 @@ button {
         max-height: 430px;
 
         margin-top: 0;
+        padding-top: 80px;
     }
 
     .profile__photo {
         width: auto;
         height: 100%;
-
         max-width: 100%;
-
         object-fit: contain;
         object-position: bottom center;
+        width: 100%;
+        max-height: 430px;
+        transform: translateY(0);
     }
 
     .profile__graphic {
